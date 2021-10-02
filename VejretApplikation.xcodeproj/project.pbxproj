@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		80A6859527091FC600E7DEE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A6859427091FC600E7DEE3 /* AppDelegate.swift */; };
 		80A6859727091FC600E7DEE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A6859627091FC600E7DEE3 /* SceneDelegate.swift */; };
-		80A6859927091FC600E7DEE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A6859827091FC600E7DEE3 /* ViewController.swift */; };
-		80A6859C27091FC600E7DEE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A6859A27091FC600E7DEE3 /* Main.storyboard */; };
+		80A6859927091FC600E7DEE3 /* VejrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A6859827091FC600E7DEE3 /* VejrViewController.swift */; };
 		80A6859E27091FC800E7DEE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80A6859D27091FC800E7DEE3 /* Assets.xcassets */; };
 		80A685A127091FC800E7DEE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A6859F27091FC800E7DEE3 /* LaunchScreen.storyboard */; };
+		80A685AA2709217A00E7DEE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A685A82709217A00E7DEE3 /* Main.storyboard */; };
+		80A685AF270922AD00E7DEE3 /* VejrManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A685AE270922AD00E7DEE3 /* VejrManager.swift */; };
+		80A685B1270922CE00E7DEE3 /* VejrData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A685B0270922CE00E7DEE3 /* VejrData.swift */; };
+		80A685B3270922DC00E7DEE3 /* VejrModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A685B2270922DC00E7DEE3 /* VejrModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		80A6859127091FC600E7DEE3 /* VejretApplikation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VejretApplikation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80A6859427091FC600E7DEE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80A6859627091FC600E7DEE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		80A6859827091FC600E7DEE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		80A6859B27091FC600E7DEE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80A6859827091FC600E7DEE3 /* VejrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VejrViewController.swift; sourceTree = "<group>"; };
 		80A6859D27091FC800E7DEE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80A685A027091FC800E7DEE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80A685A227091FC800E7DEE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80A685A92709217A00E7DEE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../Vejret/View/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80A685AE270922AD00E7DEE3 /* VejrManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VejrManager.swift; sourceTree = "<group>"; };
+		80A685B0270922CE00E7DEE3 /* VejrData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VejrData.swift; sourceTree = "<group>"; };
+		80A685B2270922DC00E7DEE3 /* VejrModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VejrModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		80A6859327091FC600E7DEE3 /* VejretApplikation */ = {
 			isa = PBXGroup;
 			children = (
-				80A6859427091FC600E7DEE3 /* AppDelegate.swift */,
 				80A6859627091FC600E7DEE3 /* SceneDelegate.swift */,
-				80A6859827091FC600E7DEE3 /* ViewController.swift */,
-				80A6859A27091FC600E7DEE3 /* Main.storyboard */,
+				80A6859427091FC600E7DEE3 /* AppDelegate.swift */,
+				80A685AB2709222000E7DEE3 /* Model */,
+				80A685AD2709224100E7DEE3 /* Controller */,
+				80A685AC2709223000E7DEE3 /* View */,
 				80A6859D27091FC800E7DEE3 /* Assets.xcassets */,
 				80A6859F27091FC800E7DEE3 /* LaunchScreen.storyboard */,
 				80A685A227091FC800E7DEE3 /* Info.plist */,
 			);
 			path = VejretApplikation;
+			sourceTree = "<group>";
+		};
+		80A685AB2709222000E7DEE3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80A685AE270922AD00E7DEE3 /* VejrManager.swift */,
+				80A685B0270922CE00E7DEE3 /* VejrData.swift */,
+				80A685B2270922DC00E7DEE3 /* VejrModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		80A685AC2709223000E7DEE3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80A685A82709217A00E7DEE3 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		80A685AD2709224100E7DEE3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				80A6859827091FC600E7DEE3 /* VejrViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +160,7 @@
 			files = (
 				80A685A127091FC800E7DEE3 /* LaunchScreen.storyboard in Resources */,
 				80A6859E27091FC800E7DEE3 /* Assets.xcassets in Resources */,
-				80A6859C27091FC600E7DEE3 /* Main.storyboard in Resources */,
+				80A685AA2709217A00E7DEE3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80A6859927091FC600E7DEE3 /* ViewController.swift in Sources */,
+				80A6859927091FC600E7DEE3 /* VejrViewController.swift in Sources */,
+				80A685B1270922CE00E7DEE3 /* VejrData.swift in Sources */,
 				80A6859527091FC600E7DEE3 /* AppDelegate.swift in Sources */,
+				80A685AF270922AD00E7DEE3 /* VejrManager.swift in Sources */,
+				80A685B3270922DC00E7DEE3 /* VejrModel.swift in Sources */,
 				80A6859727091FC600E7DEE3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,20 +183,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		80A6859A27091FC600E7DEE3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				80A6859B27091FC600E7DEE3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		80A6859F27091FC800E7DEE3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				80A685A027091FC800E7DEE3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		80A685A82709217A00E7DEE3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80A685A92709217A00E7DEE3 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -296,6 +332,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +360,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
